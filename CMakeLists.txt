@@ -18,6 +18,10 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
+find_package(rmw REQUIRED)
+find_package(rmw_implementation_cmake REQUIRED)
+find_package(std_msgs REQUIRED)
+find_package(rosidl_default_generators REQUIRED)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -30,14 +34,31 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
+
+set(msg_files
+  "msg/BeliefMsg.msg"
+)
+
+rosidl_generate_interfaces(${PROJECT_NAME}
+  ${msg_files}
+  DEPENDENCIES std_msgs
+)
+
 add_executable(belief_node src/belief_node.cpp)
+ament_target_dependencies(belief_node rclcpp std_msgs)
+rosidl_target_interfaces(belief_node ${PROJECT_NAME} "rosidl_typesupport_cpp")
+
 add_executable(goal_node src/goal_node.cpp)
+ament_target_dependencies(goal_node rclcpp std_msgs)
+rosidl_target_interfaces(goal_node ${PROJECT_NAME} "rosidl_typesupport_cpp")
+
 add_executable(scheduler_node src/scheduler_node.cpp)
+ament_target_dependencies(scheduler_node rclcpp std_msgs)
+rosidl_target_interfaces(scheduler_node ${PROJECT_NAME} "rosidl_typesupport_cpp")
+
 add_executable(interpreter_node src/interpreter_node.cpp)
-ament_target_dependencies(belief_node rclcpp)
-ament_target_dependencies(goal_node rclcpp)
-ament_target_dependencies(scheduler_node rclcpp)
-ament_target_dependencies(interpreter_node rclcpp)
+ament_target_dependencies(interpreter_node rclcpp std_msgs)
+rosidl_target_interfaces(interpreter_node ${PROJECT_NAME} "rosidl_typesupport_cpp")
 
 install(TARGETS
    belief_node
