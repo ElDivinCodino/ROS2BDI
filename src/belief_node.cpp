@@ -2,7 +2,6 @@
 #include <memory>
 
 #include "rclcpp/rclcpp.hpp"
-#include "std_msgs/msg/float32.hpp"
 #include "bdi_ros2/msg/belief_msg.hpp"
 
 int main(int argc, char * argv[])
@@ -21,7 +20,7 @@ int main(int argc, char * argv[])
   custom_qos_profile.depth = 7;
 
   // create a publisher
-  auto chatter_pub = node->create_publisher<bdi_ros2::msg::BeliefMsg>("chatter", custom_qos_profile);
+  auto chatter_pub = node->create_publisher<bdi_ros2::msg::BeliefMsg>("belief", custom_qos_profile);
 
   rclcpp::WallRate loop_rate(2);
 
