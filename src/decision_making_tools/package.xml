@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<package format="3">
+  <name>decision_making_tools</name>
+  <version>0.0.0</version>
+  <description>decision_making_tools</description>
+  <author email="dan@cogniteam.com">Dan</author>
+  <maintainer email="dan@cogniteam.com">Dan</maintainer>
+  <license>MIT</license>
+  <url>http://www.ros.org/wiki/decision_making_tools</url>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <exec_depend>decision_making</exec_depend>
+  <exec_depend>decision_making_examples</exec_depend>
+  <exec_depend>decision_making_parser</exec_depend>
+  <export>
+  	<metapackage />
+  </export>
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

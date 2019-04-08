@@ -1,0 +1,194 @@
+-- The C compiler identification is GNU 7.3.0
+-- The CXX compiler identification is GNU 7.3.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 0.6.1 (/opt/ros/crystal/share/ament_cmake/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.7", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rclcpp: 0.6.3 (/opt/ros/crystal/share/rclcpp/cmake)
+-- Found rosidl_adapter: 0.6.3 (/opt/ros/crystal/share/rosidl_adapter/cmake)
+-- Found rmw_implementation_cmake: 0.6.1 (/opt/ros/crystal/share/rmw_implementation_cmake/cmake)
+-- Found std_msgs: 0.6.1 (/opt/ros/crystal/share/std_msgs/cmake)
+-- Found rosidl_default_generators: 0.6.0 (/opt/ros/crystal/share/rosidl_default_generators/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.0g") 
+-- Found FastRTPS: /opt/ros/crystal/include  
+-- Found ament_lint_auto: 0.6.4 (/opt/ros/crystal/share/ament_lint_auto/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found version "3.6.7") 
+-- Using single matching rosidl_typesupport_c: rosidl_typesupport_fastrtps_c
+-- Using single matching rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.7", minimum required is "3.5") 
+-- Found python_cmake_module: 0.6.3 (/opt/ros/crystal/share/python_cmake_module/cmake)
+-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.6m.so (found suitable version "3.6.7", minimum required is "3.5") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.6m
+-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.6m.so
+-- Found PythonExtra: .so  
+-- Added test 'copyright' to check for copyright in CMake / C / C++ / Python code
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/francesco/ros2_ws/src/bdi_ros2/build/bdi_ros2
+[  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[35m[1mScanning dependencies of target bdi_ros2__cpp[0m
+[  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[  5%] Built target bdi_ros2__cpp
+[ 10%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[ 10%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[35m[1mScanning dependencies of target bdi_ros2__rosidl_generator_c[0m
+[ 13%] [32mBuilding C object CMakeFiles/bdi_ros2__rosidl_generator_c.dir/rosidl_generator_c/bdi_ros2/msg/belief_msg__functions.c.o[0m
+[35m[1mScanning dependencies of target bdi_ros2__rosidl_typesupport_fastrtps_cpp[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/bdi_ros2__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/bdi_ros2/msg/dds_fastrtps/belief_msg__type_support.cpp.o[0m
+[ 18%] [32m[1mLinking C shared library libbdi_ros2__rosidl_generator_c.so[0m
+[35m[1mScanning dependencies of target bdi_ros2__rosidl_typesupport_introspection_cpp[0m
+[ 21%] [32mBuilding CXX object CMakeFiles/bdi_ros2__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/bdi_ros2/msg/belief_msg__type_support.cpp.o[0m
+[ 21%] Built target bdi_ros2__rosidl_generator_c
+[ 24%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[ 27%] [32m[1mLinking CXX shared library libbdi_ros2__rosidl_typesupport_introspection_cpp.so[0m
+[ 27%] Built target bdi_ros2__rosidl_typesupport_introspection_cpp
+[ 29%] [32m[1mLinking CXX shared library libbdi_ros2__rosidl_typesupport_fastrtps_cpp.so[0m
+[35m[1mScanning dependencies of target bdi_ros2__rosidl_typesupport_introspection_c[0m
+[ 32%] [32mBuilding C object CMakeFiles/bdi_ros2__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/bdi_ros2/msg/belief_msg__type_support.c.o[0m
+[ 32%] Built target bdi_ros2__rosidl_typesupport_fastrtps_cpp
+[ 37%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[ 37%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[ 40%] [32m[1mLinking C shared library libbdi_ros2__rosidl_typesupport_introspection_c.so[0m
+[ 40%] Built target bdi_ros2__rosidl_typesupport_introspection_c
+[35m[1mScanning dependencies of target bdi_ros2__rosidl_typesupport_cpp[0m
+[ 43%] [32mBuilding CXX object CMakeFiles/bdi_ros2__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/bdi_ros2/msg/belief_msg__type_support.cpp.o[0m
+[35m[1mScanning dependencies of target bdi_ros2__rosidl_typesupport_fastrtps_c[0m
+[ 45%] [32mBuilding CXX object CMakeFiles/bdi_ros2__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/bdi_ros2/msg/dds_fastrtps_c/belief_msg__type_support_c.cpp.o[0m
+[ 48%] [32m[1mLinking CXX shared library libbdi_ros2__rosidl_typesupport_cpp.so[0m
+[ 48%] Built target bdi_ros2__rosidl_typesupport_cpp
+[ 51%] [32m[1mLinking CXX shared library libbdi_ros2__rosidl_typesupport_fastrtps_c.so[0m
+[ 51%] Built target bdi_ros2__rosidl_typesupport_fastrtps_c
+[ 54%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[35m[1mScanning dependencies of target bdi_ros2__rosidl_typesupport_c[0m
+[ 56%] [32mBuilding CXX object CMakeFiles/bdi_ros2__rosidl_typesupport_c.dir/rosidl_typesupport_c/bdi_ros2/msg/belief_msg__type_support.cpp.o[0m
+[ 59%] [32m[1mLinking CXX shared library libbdi_ros2__rosidl_typesupport_c.so[0m
+[ 59%] Built target bdi_ros2__rosidl_typesupport_c
+[35m[1mScanning dependencies of target bdi_ros2[0m
+[ 59%] Built target bdi_ros2
+[35m[1mScanning dependencies of target interpreter_node[0m
+[35m[1mScanning dependencies of target belief_node[0m
+[35m[1mScanning dependencies of target scheduler_node[0m
+[35m[1mScanning dependencies of target goal_node[0m
+[35m[1mScanning dependencies of target bdi_ros2__py[0m
+[ 62%] [34m[1mGenerating Python code for ROS interfaces[0m
+[ 70%] [32mBuilding CXX object CMakeFiles/interpreter_node.dir/src/interpreter_node.cpp.o[0m
+[ 70%] [32mBuilding CXX object CMakeFiles/scheduler_node.dir/src/scheduler_node.cpp.o[0m
+[ 70%] [32mBuilding CXX object CMakeFiles/belief_node.dir/src/belief_node.cpp.o[0m
+[ 72%] [32mBuilding CXX object CMakeFiles/goal_node.dir/src/goal_node.cpp.o[0m
+[ 75%] [32m[1mLinking CXX executable interpreter_node[0m
+[ 78%] [32m[1mLinking CXX executable goal_node[0m
+[ 78%] Built target interpreter_node
+[ 78%] Built target goal_node
+[ 78%] Built target bdi_ros2__py
+[35m[1mScanning dependencies of target bdi_ros2__python[0m
+[ 81%] [32mBuilding C object CMakeFiles/bdi_ros2__python.dir/rosidl_generator_py/bdi_ros2/msg/_belief_msg_s.c.o[0m
+[ 83%] [32m[1mLinking C shared library rosidl_generator_py/bdi_ros2/libbdi_ros2__python.so[0m
+[ 83%] Built target bdi_ros2__python
+[35m[1mScanning dependencies of target bdi_ros2__rosidl_typesupport_fastrtps_c__pyext[0m
+[35m[1mScanning dependencies of target bdi_ros2__rosidl_typesupport_c__pyext[0m
+[ 86%] [32mBuilding C object CMakeFiles/bdi_ros2__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/bdi_ros2/_bdi_ros2_s.ep.rosidl_typesupport_c.c.o[0m
+[ 89%] [32mBuilding C object CMakeFiles/bdi_ros2__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/bdi_ros2/_bdi_ros2_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[ 91%] [32m[1mLinking CXX executable belief_node[0m
+[ 97%] [32m[1mLinking C shared library rosidl_generator_py/bdi_ros2/bdi_ros2_s__rosidl_typesupport_c.cpython-36m-x86_64-linux-gnu.so[0m
+[ 97%] [32m[1mLinking C shared library rosidl_generator_py/bdi_ros2/bdi_ros2_s__rosidl_typesupport_fastrtps_c.cpython-36m-x86_64-linux-gnu.so[0m
+[ 97%] Built target bdi_ros2__rosidl_typesupport_fastrtps_c__pyext
+[ 97%] Built target bdi_ros2__rosidl_typesupport_c__pyext
+[ 97%] Built target belief_node
+[100%] [32m[1mLinking CXX executable scheduler_node[0m
+[100%] Built target scheduler_node
+[  2%] Built target bdi_ros2__cpp
+[ 10%] Built target bdi_ros2__rosidl_typesupport_fastrtps_cpp
+[ 18%] Built target bdi_ros2__rosidl_typesupport_cpp
+[ 27%] Built target bdi_ros2__rosidl_generator_c
+[ 35%] Built target bdi_ros2__rosidl_typesupport_fastrtps_c
+[ 43%] Built target bdi_ros2__rosidl_typesupport_introspection_cpp
+[ 51%] Built target bdi_ros2__rosidl_typesupport_c
+[ 59%] Built target bdi_ros2__rosidl_typesupport_introspection_c
+[ 59%] Built target bdi_ros2
+[ 64%] Built target interpreter_node
+[ 70%] Built target scheduler_node
+[ 75%] Built target goal_node
+[ 78%] Built target bdi_ros2__py
+[ 83%] Built target bdi_ros2__python
+[ 89%] Built target bdi_ros2__rosidl_typesupport_fastrtps_c__pyext
+[ 94%] Built target bdi_ros2__rosidl_typesupport_c__pyext
+[100%] Built target belief_node
+[36mInstall the project...[0m
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/share/ament_index/resource_index/rosidl_interfaces/bdi_ros2
+-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/include/bdi_ros2/msg/belief_msg.hpp
+-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/include/bdi_ros2/msg/belief_msg__struct.hpp
+-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/include/bdi_ros2/msg/belief_msg__traits.hpp
+-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/include/bdi_ros2/msg/belief_msg.h
+-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/include/bdi_ros2/msg/belief_msg__functions.h
+-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/include/bdi_ros2/msg/belief_msg__struct.h
+-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/include/bdi_ros2/msg/belief_msg__type_support.h
+-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/include/bdi_ros2/msg/rosidl_generator_c__visibility_control.h
+-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/share/bdi_ros2/environment/library_path.sh
+-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/lib/libbdi_ros2__rosidl_generator_c.so
+-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/lib/libbdi_ros2__rosidl_typesupport_c.so
+-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/lib/libbdi_ros2__rosidl_typesupport_cpp.so
+-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/include/bdi_ros2/msg/belief_msg__rosidl_typesupport_introspection_c.h
+-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/include/bdi_ros2/msg/rosidl_typesupport_introspection_c__visibility_control.h
+-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/lib/libbdi_ros2__rosidl_typesupport_introspection_c.so
+-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/include/bdi_ros2/msg/belief_msg__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/lib/libbdi_ros2__rosidl_typesupport_introspection_cpp.so
+-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/include/bdi_ros2/msg/belief_msg__rosidl_typesupport_fastrtps_c.h
+-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/include/bdi_ros2/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/lib/libbdi_ros2__rosidl_typesupport_fastrtps_c.so
+-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/include/bdi_ros2/msg/belief_msg__rosidl_typesupport_fastrtps_cpp.hpp
+-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/include/bdi_ros2/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/lib/libbdi_ros2__rosidl_typesupport_fastrtps_cpp.so
+-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/share/bdi_ros2/environment/pythonpath.sh
+-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/lib/python3.6/site-packages/bdi_ros2/__init__.py
+-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/lib/python3.6/site-packages/bdi_ros2/msg/__init__.py
+-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/lib/python3.6/site-packages/bdi_ros2/msg/_belief_msg.py
+-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/lib/python3.6/site-packages/bdi_ros2/msg/__init__.py
+-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/lib/python3.6/site-packages/bdi_ros2/bdi_ros2_s__rosidl_typesupport_c.cpython-36m-x86_64-linux-gnu.so
+-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/lib/python3.6/site-packages/bdi_ros2/bdi_ros2_s__rosidl_typesupport_fastrtps_c.cpython-36m-x86_64-linux-gnu.so
+-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/lib/libbdi_ros2__python.so
+-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/share/bdi_ros2/msg/BeliefMsg.idl
+-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/share/bdi_ros2/msg/BeliefMsg.msg
+-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/lib/bdi_ros2/belief_node
+-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/lib/bdi_ros2/goal_node
+-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/lib/bdi_ros2/scheduler_node
+-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/lib/bdi_ros2/interpreter_node
+-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/share/bdi_ros2//launch/bdi_launcher.py
+-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/share/ament_index/resource_index/package_run_dependencies/bdi_ros2
+-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/share/ament_index/resource_index/parent_prefix_path/bdi_ros2
+-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/share/bdi_ros2/environment/ament_prefix_path.sh
+-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/share/bdi_ros2/environment/path.sh
+-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/share/bdi_ros2/local_setup.bash
+-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/share/bdi_ros2/local_setup.sh
+-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/share/bdi_ros2/local_setup.zsh
+-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/share/ament_index/resource_index/packages/bdi_ros2
+-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/share/bdi_ros2/cmake/rosidl_cmake-extras.cmake
+-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/share/bdi_ros2/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/share/bdi_ros2/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/share/bdi_ros2/cmake/ament_cmake_export_libraries-extras.cmake
+-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/share/bdi_ros2/cmake/bdi_ros2Config.cmake
+-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/share/bdi_ros2/cmake/bdi_ros2Config-version.cmake
+-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/share/bdi_ros2/package.xml
+Compiling '/home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/lib/python3.6/site-packages/bdi_ros2/__init__.py'...
+Compiling '/home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/lib/python3.6/site-packages/bdi_ros2/msg/__init__.py'...

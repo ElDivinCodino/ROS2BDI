@@ -1,0 +1,1 @@
+/home/francesco/ros2_ws/src/bdi_ros2/build/bdi_ros2/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake

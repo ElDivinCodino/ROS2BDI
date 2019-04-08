@@ -1,0 +1,1 @@
+/home/francesco/ros2_ws/src/bdi_ros2/build/bdi_ros2/ament_cmake_environment_hooks/local_setup.bash

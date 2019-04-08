@@ -1,0 +1,6 @@
+Invoking command in '/home/francesco/ros2_ws/src/bdi_ros2/build/bdi_ros2': CMAKE_PREFIX_PATH=/opt/ros/crystal /usr/bin/cmake /home/francesco/ros2_ws/src/bdi_ros2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2
+Invoked command in '/home/francesco/ros2_ws/src/bdi_ros2/build/bdi_ros2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/crystal /usr/bin/cmake /home/francesco/ros2_ws/src/bdi_ros2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2
+Invoking command in '/home/francesco/ros2_ws/src/bdi_ros2/build/bdi_ros2': CMAKE_PREFIX_PATH=/opt/ros/crystal /usr/bin/cmake --build /home/francesco/ros2_ws/src/bdi_ros2/build/bdi_ros2 -- -j6 -l6
+Invoked command in '/home/francesco/ros2_ws/src/bdi_ros2/build/bdi_ros2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/crystal /usr/bin/cmake --build /home/francesco/ros2_ws/src/bdi_ros2/build/bdi_ros2 -- -j6 -l6
+Invoking command in '/home/francesco/ros2_ws/src/bdi_ros2/build/bdi_ros2': CMAKE_PREFIX_PATH=/opt/ros/crystal /usr/bin/cmake --build /home/francesco/ros2_ws/src/bdi_ros2/build/bdi_ros2 --target install
+Invoked command in '/home/francesco/ros2_ws/src/bdi_ros2/build/bdi_ros2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/crystal /usr/bin/cmake --build /home/francesco/ros2_ws/src/bdi_ros2/build/bdi_ros2 --target install

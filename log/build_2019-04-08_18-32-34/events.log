@@ -1,0 +1,286 @@
+[0.000000] (-) TimerEvent: {}
+[0.001000] (bdi_ros2) JobQueued: {'identifier': 'bdi_ros2', 'dependencies': OrderedDict()}
+[0.001065] (bdi_ros2) JobStarted: {'identifier': 'bdi_ros2'}
+[0.009988] (bdi_ros2) JobProgress: {'identifier': 'bdi_ros2', 'progress': 'cmake'}
+[0.010154] (bdi_ros2) Command: {'cmd': ['/usr/bin/cmake', '/home/francesco/ros2_ws/src/bdi_ros2', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2'], 'cwd': '/home/francesco/ros2_ws/src/bdi_ros2/build/bdi_ros2', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'francesco'), ('LC_TIME', 'it_IT.UTF-8'), ('TEXTDOMAIN', 'im-config'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '2247'), ('XDG_SESSION_TYPE', 'x11'), ('LD_LIBRARY_PATH', '/opt/ros/crystal/opt/yaml_cpp_vendor/lib:/opt/ros/crystal/opt/rviz_ogre_vendor/lib:/opt/ros/crystal/lib'), ('SHLVL', '1'), ('QT4_IM_MODULE', 'xim'), ('HOME', '/home/francesco'), ('OLDPWD', '/home/francesco/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'it_IT.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('COLCON_PREFIX_PATH', '/opt/ros/crystal'), ('IM_CONFIG_PHASE', '2'), ('ROS_DISTRO', 'crystal'), ('LOGNAME', 'francesco'), ('GTK_IM_MODULE', 'ibus'), ('_', '/usr/bin/colcon'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('ROS_VERSION', '2'), ('USERNAME', 'francesco'), ('XDG_SESSION_ID', '3'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/crystal/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/Francesco-Ubuntu:@/tmp/.ICE-unix/2150,unix/Francesco-Ubuntu:/tmp/.ICE-unix/2150'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/2fcc450d_1017_4465_ad28_f1b558836b99'), ('LC_ADDRESS', 'it_IT.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'it_IT.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im=ibus'), ('GNOME_TERMINAL_SERVICE', ':1.81'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('AMENT_PREFIX_PATH', '/opt/ros/crystal'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('LC_NAME', 'it_IT.UTF-8'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'it_IT.UTF-8'), ('TEXTDOMAINDIR', '/usr/share/locale/'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'it_IT.UTF-8'), ('XDG_VTNR', '2'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/francesco/ros2_ws/src/bdi_ros2/build/bdi_ros2'), ('CLUTTER_IM_MODULE', 'xim'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('LC_NUMERIC', 'it_IT.UTF-8'), ('PYTHONPATH', '/opt/ros/crystal/lib/python3.6/site-packages'), ('LC_PAPER', 'it_IT.UTF-8'), ('VTE_VERSION', '5202'), ('CMAKE_PREFIX_PATH', '/opt/ros/crystal')]), 'shell': False}
+[0.052324] (bdi_ros2) StdoutLine: {'line': b'-- The C compiler identification is GNU 7.3.0\n'}
+[0.090431] (bdi_ros2) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 7.3.0\n'}
+[0.092974] (bdi_ros2) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.099417] (-) TimerEvent: {}
+[0.145330] (bdi_ros2) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.145768] (bdi_ros2) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.199597] (-) TimerEvent: {}
+[0.212359] (bdi_ros2) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.219067] (bdi_ros2) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.299738] (-) TimerEvent: {}
+[0.400189] (-) TimerEvent: {}
+[0.500625] (-) TimerEvent: {}
+[0.505054] (bdi_ros2) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.507800] (bdi_ros2) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.600779] (-) TimerEvent: {}
+[0.613722] (bdi_ros2) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[0.614456] (bdi_ros2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.700934] (-) TimerEvent: {}
+[0.714092] (bdi_ros2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.720481] (bdi_ros2) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.801011] (-) TimerEvent: {}
+[0.901334] (-) TimerEvent: {}
+[1.001667] (-) TimerEvent: {}
+[1.028799] (bdi_ros2) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.032803] (bdi_ros2) StdoutLine: {'line': b'-- Found ament_cmake: 0.6.1 (/opt/ros/crystal/share/ament_cmake/cmake)\n'}
+[1.057118] (bdi_ros2) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.7", minimum required is "3") \n'}
+[1.057299] (bdi_ros2) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.101737] (-) TimerEvent: {}
+[1.202060] (-) TimerEvent: {}
+[1.202816] (bdi_ros2) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[1.227315] (bdi_ros2) StdoutLine: {'line': b'-- Found rclcpp: 0.6.3 (/opt/ros/crystal/share/rclcpp/cmake)\n'}
+[1.248381] (bdi_ros2) StdoutLine: {'line': b'-- Found rosidl_adapter: 0.6.3 (/opt/ros/crystal/share/rosidl_adapter/cmake)\n'}
+[1.287504] (bdi_ros2) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 0.6.1 (/opt/ros/crystal/share/rmw_implementation_cmake/cmake)\n'}
+[1.302109] (-) TimerEvent: {}
+[1.318405] (bdi_ros2) StdoutLine: {'line': b'-- Found std_msgs: 0.6.1 (/opt/ros/crystal/share/std_msgs/cmake)\n'}
+[1.323319] (bdi_ros2) StdoutLine: {'line': b'-- Found rosidl_default_generators: 0.6.0 (/opt/ros/crystal/share/rosidl_default_generators/cmake)\n'}
+[1.366163] (bdi_ros2) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.0g") \n'}
+[1.374810] (bdi_ros2) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/crystal/include  \n'}
+[1.402234] (-) TimerEvent: {}
+[1.403676] (bdi_ros2) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.6.4 (/opt/ros/crystal/share/ament_lint_auto/cmake)\n'}
+[1.479973] (bdi_ros2) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.6.7") \n'}
+[1.502352] (-) TimerEvent: {}
+[1.602638] (-) TimerEvent: {}
+[1.616085] (bdi_ros2) StdoutLine: {'line': b'-- Using single matching rosidl_typesupport_c: rosidl_typesupport_fastrtps_c\n'}
+[1.634916] (bdi_ros2) StdoutLine: {'line': b'-- Using single matching rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp\n'}
+[1.702749] (-) TimerEvent: {}
+[1.763290] (bdi_ros2) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.7", minimum required is "3.5") \n'}
+[1.764384] (bdi_ros2) StdoutLine: {'line': b'-- Found python_cmake_module: 0.6.3 (/opt/ros/crystal/share/python_cmake_module/cmake)\n'}
+[1.785858] (bdi_ros2) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.6m.so (found suitable version "3.6.7", minimum required is "3.5") \n'}
+[1.786043] (bdi_ros2) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.786159] (bdi_ros2) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.6m\n'}
+[1.786269] (bdi_ros2) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.6m.so\n'}
+[1.802836] (-) TimerEvent: {}
+[1.803141] (bdi_ros2) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[1.902964] (-) TimerEvent: {}
+[1.944111] (bdi_ros2) StdoutLine: {'line': b"-- Added test 'copyright' to check for copyright in CMake / C / C++ / Python code\n"}
+[1.953763] (bdi_ros2) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.965532] (bdi_ros2) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[1.967104] (bdi_ros2) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[1.969839] (bdi_ros2) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.971410] (bdi_ros2) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257\n"}
+[1.981067] (bdi_ros2) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.982664] (bdi_ros2) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.988121] (bdi_ros2) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.003041] (-) TimerEvent: {}
+[2.103313] (-) TimerEvent: {}
+[2.106133] (bdi_ros2) StdoutLine: {'line': b'-- Generating done\n'}
+[2.110569] (bdi_ros2) StdoutLine: {'line': b'-- Build files have been written to: /home/francesco/ros2_ws/src/bdi_ros2/build/bdi_ros2\n'}
+[2.114484] (bdi_ros2) CommandEnded: {'returncode': 0}
+[2.116596] (bdi_ros2) JobProgress: {'identifier': 'bdi_ros2', 'progress': 'build'}
+[2.116795] (bdi_ros2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/francesco/ros2_ws/src/bdi_ros2/build/bdi_ros2', '--', '-j6', '-l6'], 'cwd': '/home/francesco/ros2_ws/src/bdi_ros2/build/bdi_ros2', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'francesco'), ('LC_TIME', 'it_IT.UTF-8'), ('TEXTDOMAIN', 'im-config'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '2247'), ('XDG_SESSION_TYPE', 'x11'), ('LD_LIBRARY_PATH', '/opt/ros/crystal/opt/yaml_cpp_vendor/lib:/opt/ros/crystal/opt/rviz_ogre_vendor/lib:/opt/ros/crystal/lib'), ('SHLVL', '1'), ('QT4_IM_MODULE', 'xim'), ('HOME', '/home/francesco'), ('OLDPWD', '/home/francesco/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'it_IT.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('COLCON_PREFIX_PATH', '/opt/ros/crystal'), ('IM_CONFIG_PHASE', '2'), ('ROS_DISTRO', 'crystal'), ('LOGNAME', 'francesco'), ('GTK_IM_MODULE', 'ibus'), ('_', '/usr/bin/colcon'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('ROS_VERSION', '2'), ('USERNAME', 'francesco'), ('XDG_SESSION_ID', '3'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/crystal/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/Francesco-Ubuntu:@/tmp/.ICE-unix/2150,unix/Francesco-Ubuntu:/tmp/.ICE-unix/2150'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/2fcc450d_1017_4465_ad28_f1b558836b99'), ('LC_ADDRESS', 'it_IT.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'it_IT.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im=ibus'), ('GNOME_TERMINAL_SERVICE', ':1.81'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('AMENT_PREFIX_PATH', '/opt/ros/crystal'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('LC_NAME', 'it_IT.UTF-8'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'it_IT.UTF-8'), ('TEXTDOMAINDIR', '/usr/share/locale/'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'it_IT.UTF-8'), ('XDG_VTNR', '2'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/francesco/ros2_ws/src/bdi_ros2/build/bdi_ros2'), ('CLUTTER_IM_MODULE', 'xim'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('LC_NUMERIC', 'it_IT.UTF-8'), ('PYTHONPATH', '/opt/ros/crystal/lib/python3.6/site-packages'), ('LC_PAPER', 'it_IT.UTF-8'), ('VTE_VERSION', '5202'), ('CMAKE_PREFIX_PATH', '/opt/ros/crystal')]), 'shell': False}
+[2.147532] (bdi_ros2) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[2.147723] (bdi_ros2) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target bdi_ros2__cpp\x1b[0m\n'}
+[2.155745] (bdi_ros2) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[2.203415] (-) TimerEvent: {}
+[2.301276] (bdi_ros2) StdoutLine: {'line': b'[  5%] Built target bdi_ros2__cpp\n'}
+[2.303498] (-) TimerEvent: {}
+[2.309276] (bdi_ros2) StdoutLine: {'line': b'[ 10%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[2.309461] (bdi_ros2) StdoutLine: {'line': b'[ 10%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.403623] (-) TimerEvent: {}
+[2.492200] (bdi_ros2) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target bdi_ros2__rosidl_generator_c\x1b[0m\n'}
+[2.501307] (bdi_ros2) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/bdi_ros2__rosidl_generator_c.dir/rosidl_generator_c/bdi_ros2/msg/belief_msg__functions.c.o\x1b[0m\n'}
+[2.503721] (-) TimerEvent: {}
+[2.514441] (bdi_ros2) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target bdi_ros2__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[2.527728] (bdi_ros2) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/bdi_ros2__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/bdi_ros2/msg/dds_fastrtps/belief_msg__type_support.cpp.o\x1b[0m\n'}
+[2.530195] (bdi_ros2) StdoutLine: {'line': b'[ 18%] \x1b[32m\x1b[1mLinking C shared library libbdi_ros2__rosidl_generator_c.so\x1b[0m\n'}
+[2.547926] (bdi_ros2) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target bdi_ros2__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[2.558069] (bdi_ros2) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/bdi_ros2__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/bdi_ros2/msg/belief_msg__type_support.cpp.o\x1b[0m\n'}
+[2.559371] (bdi_ros2) StdoutLine: {'line': b'[ 21%] Built target bdi_ros2__rosidl_generator_c\n'}
+[2.568753] (bdi_ros2) StdoutLine: {'line': b'[ 24%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[2.603848] (-) TimerEvent: {}
+[2.704155] (-) TimerEvent: {}
+[2.758209] (bdi_ros2) StdoutLine: {'line': b'[ 27%] \x1b[32m\x1b[1mLinking CXX shared library libbdi_ros2__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[2.790260] (bdi_ros2) StdoutLine: {'line': b'[ 27%] Built target bdi_ros2__rosidl_typesupport_introspection_cpp\n'}
+[2.804268] (-) TimerEvent: {}
+[2.836128] (bdi_ros2) StdoutLine: {'line': b'[ 29%] \x1b[32m\x1b[1mLinking CXX shared library libbdi_ros2__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[2.887203] (bdi_ros2) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target bdi_ros2__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[2.896648] (bdi_ros2) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding C object CMakeFiles/bdi_ros2__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/bdi_ros2/msg/belief_msg__type_support.c.o\x1b[0m\n'}
+[2.898339] (bdi_ros2) StdoutLine: {'line': b'[ 32%] Built target bdi_ros2__rosidl_typesupport_fastrtps_cpp\n'}
+[2.904387] (-) TimerEvent: {}
+[2.906632] (bdi_ros2) StdoutLine: {'line': b'[ 37%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.906840] (bdi_ros2) StdoutLine: {'line': b'[ 37%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.917109] (bdi_ros2) StdoutLine: {'line': b'[ 40%] \x1b[32m\x1b[1mLinking C shared library libbdi_ros2__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[2.941933] (bdi_ros2) StdoutLine: {'line': b'[ 40%] Built target bdi_ros2__rosidl_typesupport_introspection_c\n'}
+[3.004486] (-) TimerEvent: {}
+[3.012153] (bdi_ros2) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target bdi_ros2__rosidl_typesupport_cpp\x1b[0m\n'}
+[3.022364] (bdi_ros2) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/bdi_ros2__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/bdi_ros2/msg/belief_msg__type_support.cpp.o\x1b[0m\n'}
+[3.104613] (-) TimerEvent: {}
+[3.181403] (bdi_ros2) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target bdi_ros2__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[3.193963] (bdi_ros2) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/bdi_ros2__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/bdi_ros2/msg/dds_fastrtps_c/belief_msg__type_support_c.cpp.o\x1b[0m\n'}
+[3.204728] (-) TimerEvent: {}
+[3.305040] (-) TimerEvent: {}
+[3.313213] (bdi_ros2) StdoutLine: {'line': b'[ 48%] \x1b[32m\x1b[1mLinking CXX shared library libbdi_ros2__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[3.376470] (bdi_ros2) StdoutLine: {'line': b'[ 48%] Built target bdi_ros2__rosidl_typesupport_cpp\n'}
+[3.405152] (-) TimerEvent: {}
+[3.449836] (bdi_ros2) StdoutLine: {'line': b'[ 51%] \x1b[32m\x1b[1mLinking CXX shared library libbdi_ros2__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[3.505272] (-) TimerEvent: {}
+[3.509553] (bdi_ros2) StdoutLine: {'line': b'[ 51%] Built target bdi_ros2__rosidl_typesupport_fastrtps_c\n'}
+[3.517285] (bdi_ros2) StdoutLine: {'line': b'[ 54%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.605371] (-) TimerEvent: {}
+[3.617571] (bdi_ros2) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target bdi_ros2__rosidl_typesupport_c\x1b[0m\n'}
+[3.626578] (bdi_ros2) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/bdi_ros2__rosidl_typesupport_c.dir/rosidl_typesupport_c/bdi_ros2/msg/belief_msg__type_support.cpp.o\x1b[0m\n'}
+[3.648284] (bdi_ros2) StdoutLine: {'line': b'[ 59%] \x1b[32m\x1b[1mLinking CXX shared library libbdi_ros2__rosidl_typesupport_c.so\x1b[0m\n'}
+[3.689650] (bdi_ros2) StdoutLine: {'line': b'[ 59%] Built target bdi_ros2__rosidl_typesupport_c\n'}
+[3.697008] (bdi_ros2) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target bdi_ros2\x1b[0m\n'}
+[3.704857] (bdi_ros2) StdoutLine: {'line': b'[ 59%] Built target bdi_ros2\n'}
+[3.705471] (-) TimerEvent: {}
+[3.712735] (bdi_ros2) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target interpreter_node\x1b[0m\n'}
+[3.712922] (bdi_ros2) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target belief_node\x1b[0m\n'}
+[3.713036] (bdi_ros2) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target scheduler_node\x1b[0m\n'}
+[3.713148] (bdi_ros2) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target goal_node\x1b[0m\n'}
+[3.713254] (bdi_ros2) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target bdi_ros2__py\x1b[0m\n'}
+[3.720945] (bdi_ros2) StdoutLine: {'line': b'[ 62%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[3.757762] (bdi_ros2) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/interpreter_node.dir/src/interpreter_node.cpp.o\x1b[0m\n'}
+[3.757958] (bdi_ros2) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/scheduler_node.dir/src/scheduler_node.cpp.o\x1b[0m\n'}
+[3.758080] (bdi_ros2) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/belief_node.dir/src/belief_node.cpp.o\x1b[0m\n'}
+[3.758350] (bdi_ros2) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/goal_node.dir/src/goal_node.cpp.o\x1b[0m\n'}
+[3.805601] (-) TimerEvent: {}
+[3.905986] (-) TimerEvent: {}
+[4.006372] (-) TimerEvent: {}
+[4.106766] (-) TimerEvent: {}
+[4.207170] (-) TimerEvent: {}
+[4.307524] (-) TimerEvent: {}
+[4.407903] (-) TimerEvent: {}
+[4.508289] (-) TimerEvent: {}
+[4.548718] (bdi_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/francesco/ros2_ws/src/bdi_ros2/src/interpreter_node.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.548924] (bdi_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/francesco/ros2_ws/src/bdi_ros2/src/interpreter_node.cpp:3:14:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kargc\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[4.549047] (bdi_ros2) StderrLine: {'line': b' int main(int \x1b[01;35m\x1b[Kargc\x1b[m\x1b[K, char * argv[])\n'}
+[4.549156] (bdi_ros2) StderrLine: {'line': b'              \x1b[01;35m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[4.549262] (bdi_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/francesco/ros2_ws/src/bdi_ros2/src/interpreter_node.cpp:3:32:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kargv\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[4.549368] (bdi_ros2) StderrLine: {'line': b' int main(int argc, char * argv[\x1b[01;35m\x1b[K]\x1b[m\x1b[K)\n'}
+[4.549475] (bdi_ros2) StderrLine: {'line': b'                                \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[4.556489] (bdi_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/francesco/ros2_ws/src/bdi_ros2/src/goal_node.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.556685] (bdi_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/francesco/ros2_ws/src/bdi_ros2/src/goal_node.cpp:3:14:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kargc\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[4.556804] (bdi_ros2) StderrLine: {'line': b' int main(int \x1b[01;35m\x1b[Kargc\x1b[m\x1b[K, char * argv[])\n'}
+[4.556912] (bdi_ros2) StderrLine: {'line': b'              \x1b[01;35m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[4.557024] (bdi_ros2) StderrLine: {'line': b'\x1b[01m\x1b[K/home/francesco/ros2_ws/src/bdi_ros2/src/goal_node.cpp:3:32:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kargv\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[4.557132] (bdi_ros2) StderrLine: {'line': b' int main(int argc, char * argv[\x1b[01;35m\x1b[K]\x1b[m\x1b[K)\n'}
+[4.557235] (bdi_ros2) StderrLine: {'line': b'                                \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[4.608373] (-) TimerEvent: {}
+[4.654528] (bdi_ros2) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable interpreter_node\x1b[0m\n'}
+[4.663308] (bdi_ros2) StdoutLine: {'line': b'[ 78%] \x1b[32m\x1b[1mLinking CXX executable goal_node\x1b[0m\n'}
+[4.708518] (-) TimerEvent: {}
+[4.742358] (bdi_ros2) StdoutLine: {'line': b'[ 78%] Built target interpreter_node\n'}
+[4.753026] (bdi_ros2) StdoutLine: {'line': b'[ 78%] Built target goal_node\n'}
+[4.808619] (-) TimerEvent: {}
+[4.908920] (-) TimerEvent: {}
+[4.942245] (bdi_ros2) StdoutLine: {'line': b'[ 78%] Built target bdi_ros2__py\n'}
+[4.950273] (bdi_ros2) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target bdi_ros2__python\x1b[0m\n'}
+[4.971876] (bdi_ros2) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding C object CMakeFiles/bdi_ros2__python.dir/rosidl_generator_py/bdi_ros2/msg/_belief_msg_s.c.o\x1b[0m\n'}
+[5.009045] (-) TimerEvent: {}
+[5.032705] (bdi_ros2) StdoutLine: {'line': b'[ 83%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/bdi_ros2/libbdi_ros2__python.so\x1b[0m\n'}
+[5.079285] (bdi_ros2) StdoutLine: {'line': b'[ 83%] Built target bdi_ros2__python\n'}
+[5.087826] (bdi_ros2) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target bdi_ros2__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[5.088012] (bdi_ros2) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target bdi_ros2__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[5.102691] (bdi_ros2) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding C object CMakeFiles/bdi_ros2__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/bdi_ros2/_bdi_ros2_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[5.102895] (bdi_ros2) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/bdi_ros2__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/bdi_ros2/_bdi_ros2_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[5.109173] (-) TimerEvent: {}
+[5.132812] (bdi_ros2) StdoutLine: {'line': b'[ 91%] \x1b[32m\x1b[1mLinking CXX executable belief_node\x1b[0m\n'}
+[5.162323] (bdi_ros2) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/bdi_ros2/bdi_ros2_s__rosidl_typesupport_c.cpython-36m-x86_64-linux-gnu.so\x1b[0m\n'}
+[5.162528] (bdi_ros2) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/bdi_ros2/bdi_ros2_s__rosidl_typesupport_fastrtps_c.cpython-36m-x86_64-linux-gnu.so\x1b[0m\n'}
+[5.209290] (-) TimerEvent: {}
+[5.211943] (bdi_ros2) StdoutLine: {'line': b'[ 97%] Built target bdi_ros2__rosidl_typesupport_fastrtps_c__pyext\n'}
+[5.212141] (bdi_ros2) StdoutLine: {'line': b'[ 97%] Built target bdi_ros2__rosidl_typesupport_c__pyext\n'}
+[5.255917] (bdi_ros2) StdoutLine: {'line': b'[ 97%] Built target belief_node\n'}
+[5.309408] (-) TimerEvent: {}
+[5.314659] (bdi_ros2) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable scheduler_node\x1b[0m\n'}
+[5.409538] (-) TimerEvent: {}
+[5.427902] (bdi_ros2) StdoutLine: {'line': b'[100%] Built target scheduler_node\n'}
+[5.436022] (bdi_ros2) CommandEnded: {'returncode': 0}
+[5.487162] (bdi_ros2) JobProgress: {'identifier': 'bdi_ros2', 'progress': 'install'}
+[5.487396] (bdi_ros2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/francesco/ros2_ws/src/bdi_ros2/build/bdi_ros2', '--target', 'install'], 'cwd': '/home/francesco/ros2_ws/src/bdi_ros2/build/bdi_ros2', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'francesco'), ('LC_TIME', 'it_IT.UTF-8'), ('TEXTDOMAIN', 'im-config'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '2247'), ('XDG_SESSION_TYPE', 'x11'), ('LD_LIBRARY_PATH', '/opt/ros/crystal/opt/yaml_cpp_vendor/lib:/opt/ros/crystal/opt/rviz_ogre_vendor/lib:/opt/ros/crystal/lib'), ('SHLVL', '1'), ('QT4_IM_MODULE', 'xim'), ('HOME', '/home/francesco'), ('OLDPWD', '/home/francesco/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'it_IT.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('COLCON_PREFIX_PATH', '/opt/ros/crystal'), ('IM_CONFIG_PHASE', '2'), ('ROS_DISTRO', 'crystal'), ('LOGNAME', 'francesco'), ('GTK_IM_MODULE', 'ibus'), ('_', '/usr/bin/colcon'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('ROS_VERSION', '2'), ('USERNAME', 'francesco'), ('XDG_SESSION_ID', '3'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/crystal/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/Francesco-Ubuntu:@/tmp/.ICE-unix/2150,unix/Francesco-Ubuntu:/tmp/.ICE-unix/2150'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/2fcc450d_1017_4465_ad28_f1b558836b99'), ('LC_ADDRESS', 'it_IT.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'it_IT.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im=ibus'), ('GNOME_TERMINAL_SERVICE', ':1.81'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('AMENT_PREFIX_PATH', '/opt/ros/crystal'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('LC_NAME', 'it_IT.UTF-8'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'it_IT.UTF-8'), ('TEXTDOMAINDIR', '/usr/share/locale/'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'it_IT.UTF-8'), ('XDG_VTNR', '2'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/francesco/ros2_ws/src/bdi_ros2/build/bdi_ros2'), ('CLUTTER_IM_MODULE', 'xim'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('LC_NUMERIC', 'it_IT.UTF-8'), ('PYTHONPATH', '/opt/ros/crystal/lib/python3.6/site-packages'), ('LC_PAPER', 'it_IT.UTF-8'), ('VTE_VERSION', '5202'), ('CMAKE_PREFIX_PATH', '/opt/ros/crystal')]), 'shell': False}
+[5.509625] (-) TimerEvent: {}
+[5.529979] (bdi_ros2) StdoutLine: {'line': b'[  2%] Built target bdi_ros2__cpp\n'}
+[5.556822] (bdi_ros2) StdoutLine: {'line': b'[ 10%] Built target bdi_ros2__rosidl_typesupport_fastrtps_cpp\n'}
+[5.589917] (bdi_ros2) StdoutLine: {'line': b'[ 18%] Built target bdi_ros2__rosidl_typesupport_cpp\n'}
+[5.609825] (-) TimerEvent: {}
+[5.623504] (bdi_ros2) StdoutLine: {'line': b'[ 27%] Built target bdi_ros2__rosidl_generator_c\n'}
+[5.665078] (bdi_ros2) StdoutLine: {'line': b'[ 35%] Built target bdi_ros2__rosidl_typesupport_fastrtps_c\n'}
+[5.692542] (bdi_ros2) StdoutLine: {'line': b'[ 43%] Built target bdi_ros2__rosidl_typesupport_introspection_cpp\n'}
+[5.709975] (-) TimerEvent: {}
+[5.732641] (bdi_ros2) StdoutLine: {'line': b'[ 51%] Built target bdi_ros2__rosidl_typesupport_c\n'}
+[5.758339] (bdi_ros2) StdoutLine: {'line': b'[ 59%] Built target bdi_ros2__rosidl_typesupport_introspection_c\n'}
+[5.780743] (bdi_ros2) StdoutLine: {'line': b'[ 59%] Built target bdi_ros2\n'}
+[5.810081] (-) TimerEvent: {}
+[5.812185] (bdi_ros2) StdoutLine: {'line': b'[ 64%] Built target interpreter_node\n'}
+[5.847598] (bdi_ros2) StdoutLine: {'line': b'[ 70%] Built target scheduler_node\n'}
+[5.883589] (bdi_ros2) StdoutLine: {'line': b'[ 75%] Built target goal_node\n'}
+[5.907021] (bdi_ros2) StdoutLine: {'line': b'[ 78%] Built target bdi_ros2__py\n'}
+[5.910137] (-) TimerEvent: {}
+[5.926993] (bdi_ros2) StdoutLine: {'line': b'[ 83%] Built target bdi_ros2__python\n'}
+[5.946576] (bdi_ros2) StdoutLine: {'line': b'[ 89%] Built target bdi_ros2__rosidl_typesupport_fastrtps_c__pyext\n'}
+[5.966386] (bdi_ros2) StdoutLine: {'line': b'[ 94%] Built target bdi_ros2__rosidl_typesupport_c__pyext\n'}
+[5.987364] (bdi_ros2) StdoutLine: {'line': b'[100%] Built target belief_node\n'}
+[6.001641] (bdi_ros2) StdoutLine: {'line': b'\x1b[36mInstall the project...\x1b[0m\n'}
+[6.007888] (bdi_ros2) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[6.008348] (bdi_ros2) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[6.008638] (bdi_ros2) StdoutLine: {'line': b'-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/share/ament_index/resource_index/rosidl_interfaces/bdi_ros2\n'}
+[6.010224] (-) TimerEvent: {}
+[6.015089] (bdi_ros2) StdoutLine: {'line': b'-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/include/bdi_ros2/msg/belief_msg.hpp\n'}
+[6.021521] (bdi_ros2) StdoutLine: {'line': b'-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/include/bdi_ros2/msg/belief_msg__struct.hpp\n'}
+[6.027850] (bdi_ros2) StdoutLine: {'line': b'-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/include/bdi_ros2/msg/belief_msg__traits.hpp\n'}
+[6.034197] (bdi_ros2) StdoutLine: {'line': b'-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/include/bdi_ros2/msg/belief_msg.h\n'}
+[6.041206] (bdi_ros2) StdoutLine: {'line': b'-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/include/bdi_ros2/msg/belief_msg__functions.h\n'}
+[6.047648] (bdi_ros2) StdoutLine: {'line': b'-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/include/bdi_ros2/msg/belief_msg__struct.h\n'}
+[6.053894] (bdi_ros2) StdoutLine: {'line': b'-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/include/bdi_ros2/msg/belief_msg__type_support.h\n'}
+[6.060194] (bdi_ros2) StdoutLine: {'line': b'-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/include/bdi_ros2/msg/rosidl_generator_c__visibility_control.h\n'}
+[6.066545] (bdi_ros2) StdoutLine: {'line': b'-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/share/bdi_ros2/environment/library_path.sh\n'}
+[6.073131] (bdi_ros2) StdoutLine: {'line': b'-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/lib/libbdi_ros2__rosidl_generator_c.so\n'}
+[6.079722] (bdi_ros2) StdoutLine: {'line': b'-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/lib/libbdi_ros2__rosidl_typesupport_c.so\n'}
+[6.086200] (bdi_ros2) StdoutLine: {'line': b'-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/lib/libbdi_ros2__rosidl_typesupport_cpp.so\n'}
+[6.092576] (bdi_ros2) StdoutLine: {'line': b'-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/include/bdi_ros2/msg/belief_msg__rosidl_typesupport_introspection_c.h\n'}
+[6.098824] (bdi_ros2) StdoutLine: {'line': b'-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/include/bdi_ros2/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[6.105268] (bdi_ros2) StdoutLine: {'line': b'-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/lib/libbdi_ros2__rosidl_typesupport_introspection_c.so\n'}
+[6.110335] (-) TimerEvent: {}
+[6.111621] (bdi_ros2) StdoutLine: {'line': b'-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/include/bdi_ros2/msg/belief_msg__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.118062] (bdi_ros2) StdoutLine: {'line': b'-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/lib/libbdi_ros2__rosidl_typesupport_introspection_cpp.so\n'}
+[6.124893] (bdi_ros2) StdoutLine: {'line': b'-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/include/bdi_ros2/msg/belief_msg__rosidl_typesupport_fastrtps_c.h\n'}
+[6.131343] (bdi_ros2) StdoutLine: {'line': b'-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/include/bdi_ros2/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[6.137959] (bdi_ros2) StdoutLine: {'line': b'-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/lib/libbdi_ros2__rosidl_typesupport_fastrtps_c.so\n'}
+[6.145339] (bdi_ros2) StdoutLine: {'line': b'-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/include/bdi_ros2/msg/belief_msg__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.152013] (bdi_ros2) StdoutLine: {'line': b'-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/include/bdi_ros2/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[6.158735] (bdi_ros2) StdoutLine: {'line': b'-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/lib/libbdi_ros2__rosidl_typesupport_fastrtps_cpp.so\n'}
+[6.165035] (bdi_ros2) StdoutLine: {'line': b'-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/share/bdi_ros2/environment/pythonpath.sh\n'}
+[6.171414] (bdi_ros2) StdoutLine: {'line': b'-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/lib/python3.6/site-packages/bdi_ros2/__init__.py\n'}
+[6.177759] (bdi_ros2) StdoutLine: {'line': b'-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/lib/python3.6/site-packages/bdi_ros2/msg/__init__.py\n'}
+[6.184079] (bdi_ros2) StdoutLine: {'line': b'-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/lib/python3.6/site-packages/bdi_ros2/msg/_belief_msg.py\n'}
+[6.190457] (bdi_ros2) StdoutLine: {'line': b'-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/lib/python3.6/site-packages/bdi_ros2/msg/__init__.py\n'}
+[6.197112] (bdi_ros2) StdoutLine: {'line': b'-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/lib/python3.6/site-packages/bdi_ros2/bdi_ros2_s__rosidl_typesupport_c.cpython-36m-x86_64-linux-gnu.so\n'}
+[6.203751] (bdi_ros2) StdoutLine: {'line': b'-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/lib/python3.6/site-packages/bdi_ros2/bdi_ros2_s__rosidl_typesupport_fastrtps_c.cpython-36m-x86_64-linux-gnu.so\n'}
+[6.210194] (bdi_ros2) StdoutLine: {'line': b'-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/lib/libbdi_ros2__python.so\n'}
+[6.210356] (-) TimerEvent: {}
+[6.216647] (bdi_ros2) StdoutLine: {'line': b'-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/share/bdi_ros2/msg/BeliefMsg.idl\n'}
+[6.223055] (bdi_ros2) StdoutLine: {'line': b'-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/share/bdi_ros2/msg/BeliefMsg.msg\n'}
+[6.229745] (bdi_ros2) StdoutLine: {'line': b'-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/lib/bdi_ros2/belief_node\n'}
+[6.236150] (bdi_ros2) StdoutLine: {'line': b'-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/lib/bdi_ros2/goal_node\n'}
+[6.242738] (bdi_ros2) StdoutLine: {'line': b'-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/lib/bdi_ros2/scheduler_node\n'}
+[6.249199] (bdi_ros2) StdoutLine: {'line': b'-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/lib/bdi_ros2/interpreter_node\n'}
+[6.255825] (bdi_ros2) StdoutLine: {'line': b'-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/share/bdi_ros2//launch/bdi_launcher.py\n'}
+[6.262290] (bdi_ros2) StdoutLine: {'line': b'-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/share/ament_index/resource_index/package_run_dependencies/bdi_ros2\n'}
+[6.268873] (bdi_ros2) StdoutLine: {'line': b'-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/share/ament_index/resource_index/parent_prefix_path/bdi_ros2\n'}
+[6.275215] (bdi_ros2) StdoutLine: {'line': b'-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/share/bdi_ros2/environment/ament_prefix_path.sh\n'}
+[6.281541] (bdi_ros2) StdoutLine: {'line': b'-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/share/bdi_ros2/environment/path.sh\n'}
+[6.288038] (bdi_ros2) StdoutLine: {'line': b'-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/share/bdi_ros2/local_setup.bash\n'}
+[6.294703] (bdi_ros2) StdoutLine: {'line': b'-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/share/bdi_ros2/local_setup.sh\n'}
+[6.301520] (bdi_ros2) StdoutLine: {'line': b'-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/share/bdi_ros2/local_setup.zsh\n'}
+[6.308105] (bdi_ros2) StdoutLine: {'line': b'-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/share/ament_index/resource_index/packages/bdi_ros2\n'}
+[6.310467] (-) TimerEvent: {}
+[6.314526] (bdi_ros2) StdoutLine: {'line': b'-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/share/bdi_ros2/cmake/rosidl_cmake-extras.cmake\n'}
+[6.320982] (bdi_ros2) StdoutLine: {'line': b'-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/share/bdi_ros2/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[6.327385] (bdi_ros2) StdoutLine: {'line': b'-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/share/bdi_ros2/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[6.333752] (bdi_ros2) StdoutLine: {'line': b'-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/share/bdi_ros2/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[6.340482] (bdi_ros2) StdoutLine: {'line': b'-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/share/bdi_ros2/cmake/bdi_ros2Config.cmake\n'}
+[6.346700] (bdi_ros2) StdoutLine: {'line': b'-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/share/bdi_ros2/cmake/bdi_ros2Config-version.cmake\n'}
+[6.353118] (bdi_ros2) StdoutLine: {'line': b'-- Symlinking: /home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/share/bdi_ros2/package.xml\n'}
+[6.396609] (bdi_ros2) StdoutLine: {'line': b"Compiling '/home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/lib/python3.6/site-packages/bdi_ros2/__init__.py'...\n"}
+[6.410592] (-) TimerEvent: {}
+[6.438111] (bdi_ros2) StdoutLine: {'line': b"Compiling '/home/francesco/ros2_ws/src/bdi_ros2/install/bdi_ros2/lib/python3.6/site-packages/bdi_ros2/msg/__init__.py'...\n"}
+[6.445407] (bdi_ros2) CommandEnded: {'returncode': 0}
+[6.491385] (bdi_ros2) JobEnded: {'identifier': 'bdi_ros2', 'rc': 0}
+[6.491840] (-) EventReactorShutdown: {}
