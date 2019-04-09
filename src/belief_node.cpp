@@ -29,7 +29,7 @@ int main(int argc, char * argv[])
 
   while (rclcpp::ok()) {
     msg->value = ++i;
-    msg->name = "Stringa";
+    msg->name = "Belief_node";
     std::cout << "Publishing incremental float: '" << msg->value << "'" << std::endl;
     chatter_pub->publish(msg);
 

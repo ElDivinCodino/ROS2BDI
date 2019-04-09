@@ -37,6 +37,7 @@ endif()
 
 set(msg_files
   "msg/BeliefMsg.msg"
+  "msg/GoalMsg.msg"
 )
 
 rosidl_generate_interfaces(${PROJECT_NAME}
