@@ -34,85 +34,37 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
-
-set(msg_files
-  "msg/BeliefBool.msg"
-  "msg/BeliefString.msg"
-  "msg/BeliefInt.msg"
-  "msg/BeliefFloat.msg"
-  "msg/GoalBool.msg"
-  "msg/GoalString.msg"
-  "msg/GoalInt.msg"
-  "msg/GoalFloat.msg"
-)
-
-rosidl_generate_interfaces(${PROJECT_NAME}
-  ${msg_files}
-  DEPENDENCIES std_msgs
-)
-
-add_executable(belief_node src/belief_node.cpp)
-ament_target_dependencies(belief_node rclcpp std_msgs)
-rosidl_target_interfaces(belief_node ${PROJECT_NAME} "rosidl_typesupport_cpp")
-
-add_executable(goal_node src/goal_node.cpp)
-ament_target_dependencies(goal_node rclcpp std_msgs)
-rosidl_target_interfaces(goal_node ${PROJECT_NAME} "rosidl_typesupport_cpp")
-
-add_executable(scheduler_node src/scheduler_node.cpp)
-ament_target_dependencies(scheduler_node rclcpp std_msgs)
-rosidl_target_interfaces(scheduler_node ${PROJECT_NAME} "rosidl_typesupport_cpp")
-
-add_executable(interpreter_node src/interpreter_node.cpp)
-ament_target_dependencies(interpreter_node rclcpp std_msgs)
-rosidl_target_interfaces(interpreter_node ${PROJECT_NAME} "rosidl_typesupport_cpp")
-
-
-
-
-add_executable(batterySensor src/RobotVacuum/batterySensor.cpp)
+add_executable(batterySensor batterySensor.cpp)
 ament_target_dependencies(batterySensor rclcpp std_msgs)
 rosidl_target_interfaces(batterySensor ${PROJECT_NAME} "rosidl_typesupport_cpp")
 
-add_executable(tankSensor src/RobotVacuum/tankSensor.cpp)
+add_executable(tankSensor tankSensor.cpp)
 ament_target_dependencies(tankSensor rclcpp std_msgs)
 rosidl_target_interfaces(tankSensor ${PROJECT_NAME} "rosidl_typesupport_cpp")
 
-add_executable(internalStateMonitor src/RobotVacuum/internalStateMonitor.cpp)
+add_executable(internalStateMonitor internalStateMonitor.cpp)
 ament_target_dependencies(internalStateMonitor rclcpp std_msgs)
 rosidl_target_interfaces(internalStateMonitor ${PROJECT_NAME} "rosidl_typesupport_cpp")
 
-add_executable(goalManager src/RobotVacuum/goalManager.cpp)
+add_executable(goalManager goalManager.cpp)
 ament_target_dependencies(goalManager rclcpp std_msgs)
 rosidl_target_interfaces(goalManager ${PROJECT_NAME} "rosidl_typesupport_cpp")
 
-add_executable(scheduler src/RobotVacuum/scheduler.cpp)
+add_executable(scheduler scheduler.cpp)
 ament_target_dependencies(scheduler rclcpp std_msgs)
 rosidl_target_interfaces(scheduler ${PROJECT_NAME} "rosidl_typesupport_cpp")
 
-add_executable(interpreter src/RobotVacuum/interpreter.cpp)
+add_executable(interpreter interpreter.cpp)
 ament_target_dependencies(interpreter rclcpp std_msgs)
 rosidl_target_interfaces(interpreter ${PROJECT_NAME} "rosidl_typesupport_cpp")
 
-
-
-
-
 install(TARGETS
-   belief_node
-   goal_node
-   scheduler_node
-   interpreter_node
-
-
    batterySensor
    tankSensor
    internalStateMonitor
    goalManager
    scheduler
    interpreter
-
-
    DESTINATION lib/${PROJECT_NAME}
  )
 

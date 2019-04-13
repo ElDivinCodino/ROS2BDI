@@ -75,9 +75,6 @@ int main(int argc, char *argv[])
     auto intGoalSub = node->create_subscription<bdi_ros2::msg::GoalInt>("goal", intGoalCallback, custom_qos_profile);
     auto floatGoalSub = node->create_subscription<bdi_ros2::msg::GoalFloat>("goal", floatGoalCallback, custom_qos_profile);
 
-    // spin: Blocking call, do work indefinitely as it comes in.
-    //  spin_once: Do one "cycle" of work, with optional timeout.
-    //  spin_some: Do all the work that is immediately available to the executor.
     rclcpp::spin(node);
 
     return 0;

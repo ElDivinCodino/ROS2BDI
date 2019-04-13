@@ -7,6 +7,8 @@
 #include "bdi_ros2/msg/belief_int.hpp"
 #include "bdi_ros2/msg/belief_float.hpp"
 
+bool isRoomClean; 
+
 auto CreateBeliefBoolMsg(std::string goal, bool value)
 {
     auto msg = std::make_shared<bdi_ros2::msg::BeliefBool>();
@@ -51,7 +53,7 @@ int main(int argc, char *argv[])
 {
     rclcpp::init(argc, argv);
 
-    auto node = rclcpp::Node::make_shared("belief_node");
+    auto node = rclcpp::Node::make_shared("internalStateMonitor");
 
     // Set the QoS. ROS 2 will provide QoS profiles based on the following use cases:
     // Default QoS settings for publishers and subscriptions (rmw_qos_profile_default).
@@ -63,19 +65,15 @@ int main(int argc, char *argv[])
     custom_qos_profile.depth = 7;
 
     // create a publisher for a specific type of message
-    //auto chatter_pub = node->create_publisher<bdi_ros2::msg::MessageType>("topic_name", custom_qos_profile);
+    auto chatter_pub = node->create_publisher<bdi_ros2::msg::BeliefBool>("belief", custom_qos_profile);
 
-    rclcpp::WallRate loop_rate(2);
+    // initially the room is supposed to be clean
+    isRoomClean = true;
 
-    // create a message
-    //auto msg = CreateBeliefBoolMsg("GoalName", bool);
-    //auto msg = CreateBeliefStringMsg("GoalName", "string");
-    //auto msg = CreateBeliefIntMsg("GoalName", int);
-    //auto msg = CreateBeliefFloatMsg("GoalName", float);
-
-    // publish the message
-    //chatter_pub->publish(msg);
-    //std::cout << "New BELIEF: Belief: " << msg->name << ", value: " << msg->value << std::endl;
+    // publish the perceived state of the room
+    auto msg = CreateBeliefBoolMsg("IsRoomClean", isRoomClean);
+    chatter_pub->publish(msg);
+    std::cout << "New BELIEF: Belief: " << msg->name << ", value: " << msg->value << std::endl;
 
     rclcpp::spin_some(node);
 
