@@ -36,8 +36,14 @@ endif()
 
 
 set(msg_files
-  "msg/BeliefMsg.msg"
-  "msg/GoalMsg.msg"
+  "msg/BeliefBool.msg"
+  "msg/BeliefString.msg"
+  "msg/BeliefInt.msg"
+  "msg/BeliefFloat.msg"
+  "msg/GoalBool.msg"
+  "msg/GoalString.msg"
+  "msg/GoalInt.msg"
+  "msg/GoalFloat.msg"
 )
 
 rosidl_generate_interfaces(${PROJECT_NAME}
