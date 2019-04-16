@@ -7,7 +7,7 @@
 #include "bdi_ros2/msg/belief_int.hpp"
 #include "bdi_ros2/msg/belief_float.hpp"
 
-bool isRoomClean; 
+bool isRoomClean;
 
 auto CreateBeliefBoolMsg(std::string goal, bool value)
 {
@@ -65,17 +65,26 @@ int main(int argc, char *argv[])
     custom_qos_profile.depth = 7;
 
     // create a publisher for a specific type of message
-    auto chatter_pub = node->create_publisher<bdi_ros2::msg::BeliefBool>("belief", custom_qos_profile);
+    auto boolBeliefPub = node->create_publisher<bdi_ros2::msg::BeliefBool>("belief", custom_qos_profile);
+
+    rclcpp::WallRate loop_rate(0.05);
 
     // initially the room is supposed to be clean
     isRoomClean = true;
 
-    // publish the perceived state of the room
-    auto msg = CreateBeliefBoolMsg("IsRoomClean", isRoomClean);
-    chatter_pub->publish(msg);
-    std::cout << "New BELIEF: Belief: " << msg->name << ", value: " << msg->value << std::endl;
+    while (rclcpp::ok())
+    {
+        // this, together with the above rclcpp::WallRate loop_rate(0.05), makes the room dirty every 20 seconds
+        isRoomClean = false;
+        
+        // publish the perceived state of the room
+        auto msg = CreateBeliefBoolMsg("IsRoomClean", isRoomClean);
+        boolBeliefPub->publish(msg);
+        std::cout << "New BELIEF: Belief: " << msg->name << ", value: " << msg->value << std::endl;
 
-    rclcpp::spin_some(node);
+        rclcpp::spin_some(node);
+        loop_rate.sleep();
+    }
 
     return 0;
 }

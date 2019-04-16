@@ -34,15 +34,29 @@ int main(int argc, char *argv[])
     // create a publisher for a specific type of message
     auto chatter_pub = node->create_publisher<bdi_ros2::msg::BeliefInt>("belief", custom_qos_profile);
 
+    // check every second the status
+    rclcpp::WallRate loop_rate(1);
+
     // initially the tank is supposed to be empty
     tankFilling = 0;
 
-    // publish the current filling level of the tank
-    auto msg = CreateBeliefIntMsg("DirtTankFilling", tankFilling);
-    chatter_pub->publish(msg);
-    std::cout << "New BELIEF: Belief: " << msg->name << ", value: " << msg->value << std::endl;
+    int oldTankFillingValue = tankFilling;
 
-    rclcpp::spin_some(node);
+    while (rclcpp::ok())
+    {
+        if (oldTankFillingValue != tankFilling)
+        {
+            // publish the current filling level of the tank
+            auto msg = CreateBeliefIntMsg("DirtTankFilling", tankFilling);
+            chatter_pub->publish(msg);
+            std::cout << "New BELIEF: Belief: " << msg->name << ", value: " << msg->value << std::endl;
+
+            oldTankFillingValue = tankFilling;
+        }
+
+        rclcpp::spin_some(node);
+        loop_rate.sleep();
+    }
 
     return 0;
 }
