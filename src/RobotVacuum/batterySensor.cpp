@@ -7,24 +7,21 @@
 bool isCharging = false;
 
 int batteryCharge;
-
-public:
-void startRecharging()
+/*
+public void startRecharging()
 {
     isCharging = true;
 }
 
-void stopRecharging()
+public void stopRecharging()
 {
     isCharging = false;
 }
 
-int getBatteryCharge()
+public int getBatteryCharge()
 {
     return batteryCharge;
-}
-
-private:
+}*/
 auto CreateBeliefIntMsg(std::string goal, int value)
 {
     auto msg = std::make_shared<bdi_ros2::msg::BeliefInt>();
@@ -34,6 +31,7 @@ auto CreateBeliefIntMsg(std::string goal, int value)
 
     return msg;
 }
+
 
 int main(int argc, char *argv[])
 {
@@ -72,9 +70,9 @@ int main(int argc, char *argv[])
         }
         else
         {
-            batteryCharge += 1;
+            batteryCharge +=1;
         }
-
+        
         rclcpp::spin_some(node);
         loop_rate.sleep();
     }
