@@ -1,8 +1,8 @@
 #include <iostream>
 #include <memory>
-#include "goalManager.hpp"
+#include "src/publishSubscriber.hpp"
 
-GoalManager::GoalManager() : rclcpp::Node("goal_manager")
+PublishSubscriber::PublishSubscriber() : rclcpp::Node("goal_manager")
 {
     rmw_qos_profile_t custom_qos_profile = rmw_qos_profile_default;
 
@@ -25,7 +25,7 @@ GoalManager::GoalManager() : rclcpp::Node("goal_manager")
     auto intBeliefCallback = [this](const bdi_ros2::msg::BeliefInt::SharedPtr msg) -> void {
         std::cout << "Received a Belief message! Belief: " << msg->name << "value: " << msg->value << std::endl;
 
-        if (msg->name == "BatteryCharge" && msg->value >= 30 && msg->value < 90)
+        if (msg->name == "BatteryCharge" && msg->value >= 30 && msg->value < 50)
         {
             // create a message
             auto newMsg = std::make_shared<bdi_ros2::msg::GoalInt>();
@@ -71,7 +71,7 @@ int main(int argc, char *argv[])
 {
     rclcpp::init(argc, argv);
 
-    auto node = std::make_shared<GoalManager>();
+    auto node = std::make_shared<PublishSubscriber>();
 
     rclcpp::spin(node);
     rclcpp::shutdown();

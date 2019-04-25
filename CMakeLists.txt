@@ -23,6 +23,24 @@ find_package(rmw_implementation_cmake REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
+include_directories(include 
+            ${rclcpp_INCLUDE_DIRS}
+            ${rmw_implementation_INCLUDE_DIRS}
+            ${std_msgs_INCLUDE_DIRS}
+)
+
+add_library(custom_objects
+            beliefs/belief.cpp
+            goals/goal.cpp
+            plans/plan.cpp
+            plans/cleaningRoutine.cpp
+            plans/cleaningSpecific.cpp
+            plans/rechargeBatteryCritical.cpp
+            plans/rechargeBatterySafe.cpp
+)
+
+target_link_libraries(custom_objects ${rclcpp_LIBRARIES} ${rmw_implementation_LIBRARIES} ${std_msgs_LIBRARIES})
+
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights
@@ -87,16 +105,19 @@ ament_target_dependencies(goalManager rclcpp std_msgs)
 rosidl_target_interfaces(goalManager ${PROJECT_NAME} "rosidl_typesupport_cpp")
 
 add_executable(scheduler src/RobotVacuum/scheduler.cpp)
+target_link_libraries(scheduler custom_objects)
 ament_target_dependencies(scheduler rclcpp std_msgs)
 rosidl_target_interfaces(scheduler ${PROJECT_NAME} "rosidl_typesupport_cpp")
 
 add_executable(interpreter src/RobotVacuum/interpreter.cpp)
+target_link_libraries(interpreter custom_objects)
 ament_target_dependencies(interpreter rclcpp std_msgs)
 rosidl_target_interfaces(interpreter ${PROJECT_NAME} "rosidl_typesupport_cpp")
 
-
-
-
+install(DIRECTORY
+    include/${PROJECT_NAME}
+    DESTINATION include
+)
 
 install(TARGETS
    belief_node
@@ -104,6 +125,7 @@ install(TARGETS
    scheduler_node
    interpreter_node
 
+   custom_objects
 
    batterySensor
    tankSensor
@@ -111,7 +133,6 @@ install(TARGETS
    goalManager
    scheduler
    interpreter
-
 
    DESTINATION lib/${PROJECT_NAME}
  )

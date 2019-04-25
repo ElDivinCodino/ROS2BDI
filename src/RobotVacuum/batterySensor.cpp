@@ -4,8 +4,27 @@
 #include "rclcpp/rclcpp.hpp"
 #include "bdi_ros2/msg/belief_int.hpp"
 
+bool isCharging = false;
+
 int batteryCharge;
 
+public:
+void startRecharging()
+{
+    isCharging = true;
+}
+
+void stopRecharging()
+{
+    isCharging = false;
+}
+
+int getBatteryCharge()
+{
+    return batteryCharge;
+}
+
+private:
 auto CreateBeliefIntMsg(std::string goal, int value)
 {
     auto msg = std::make_shared<bdi_ros2::msg::BeliefInt>();
@@ -47,7 +66,14 @@ int main(int argc, char *argv[])
         std::cout << "New BELIEF: Belief: " << msg->name << ", value: " << msg->value << std::endl;
 
         // this, together with the above rclcpp::WallRate loop_rate(1), simulates battery dropping 1% per second
-        batteryCharge -= 1;
+        if (!isCharging)
+        {
+            batteryCharge -= 1;
+        }
+        else
+        {
+            batteryCharge += 1;
+        }
 
         rclcpp::spin_some(node);
         loop_rate.sleep();
