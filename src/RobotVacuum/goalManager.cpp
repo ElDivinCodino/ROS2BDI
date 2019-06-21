@@ -15,15 +15,30 @@ PublishSubscriber::PublishSubscriber() : rclcpp::Node("goal_manager")
     floatGoalPub = create_publisher<bdi_ros2::msg::GoalFloat>("goal", custom_qos_profile);
 
     auto boolBeliefCallback = [this](const bdi_ros2::msg::BeliefBool::SharedPtr msg) -> void {
-        std::cout << "Received a Belief message! Belief: " << msg->name << "value: " << msg->value << std::endl;
+        std::cout << "Received a Belief message! Belief: " << msg->name << ", value: " << msg->value << std::endl;
+
+        if (msg->name == "RoomClean" && msg->value == false)
+        {
+            // create a message
+            auto newMsg = std::make_shared<bdi_ros2::msg::GoalBool>();
+
+            newMsg->name = msg->name;
+            newMsg->value = true;
+            newMsg->priority = 3;
+            newMsg->deadline = 100 - msg->value;
+
+            // publish the messageBatteryCharge
+            boolGoalPub->publish(newMsg);
+            std::cout << "Publishing GOAL message: Goal: " << newMsg->name << ", value: " << newMsg->value << ", priority: " << newMsg->priority << ", deadline: " << newMsg->deadline << std::endl;
+        }
     };
 
     auto stringBeliefCallback = [this](const bdi_ros2::msg::BeliefString::SharedPtr msg) -> void {
-        std::cout << "Received a Belief message! Belief: " << msg->name << "value: " << msg->value << std::endl;
+        std::cout << "Received a Belief message! Belief: " << msg->name << ", value: " << msg->value << std::endl;
     };
 
     auto intBeliefCallback = [this](const bdi_ros2::msg::BeliefInt::SharedPtr msg) -> void {
-        std::cout << "Received a Belief message! Belief: " << msg->name << "value: " << msg->value << std::endl;
+        std::cout << "Received a Belief message! Belief: " << msg->name << ", value: " << msg->value << std::endl;
 
         if (msg->name == "BatteryCharge" && msg->value >= 30 && msg->value < 50)
         {

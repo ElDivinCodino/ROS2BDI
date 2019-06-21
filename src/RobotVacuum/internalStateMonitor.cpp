@@ -78,7 +78,7 @@ int main(int argc, char *argv[])
         isRoomClean = false;
         
         // publish the perceived state of the room
-        auto msg = CreateBeliefBoolMsg("IsRoomClean", isRoomClean);
+        auto msg = CreateBeliefBoolMsg("RoomClean", isRoomClean);
         boolBeliefPub->publish(msg);
         std::cout << "New BELIEF: Belief: " << msg->name << ", value: " << msg->value << std::endl;
 

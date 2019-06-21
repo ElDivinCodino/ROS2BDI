@@ -9,7 +9,7 @@
 std::array<Plan *, 4> planSet = {new CleaningSpecific, new CleaningRoutine, new RechargeBatteryCritical, new RechargeBatterySafe};
 
 
-void ActivatePlan(Goal *goal)
+void RescheduleIntention(Goal *goal)
 {
     std::vector<Plan *> possiblePlans;
 
@@ -25,10 +25,10 @@ void ActivatePlan(Goal *goal)
     Plan *chosenPlan;
 
     // among the possible plans, choose the most suitable one (TODO: by now, it just picks the one with greatest priority <= goal's priority)
+    int currentPlanPriority = -1;
+    
     for (int i = 0; i < possiblePlans.size(); i++)
     {
-        int currentPlanPriority = -1;
-
         if (possiblePlans[i]->planPriority > currentPlanPriority && possiblePlans[i]->planPriority <= goal->getPriority())
         {
             currentPlanPriority = possiblePlans[i]->planPriority;
@@ -65,28 +65,28 @@ PublishSubscriber::PublishSubscriber() : rclcpp::Node("scheduler")
         std::cout << "Received a Goal message! Goal: " << msg->name << "value: " << msg->value << std::endl;
 
         GoalBool *goal = new GoalBool(msg->name, msg->value, msg->priority, msg->deadline);
-        ActivatePlan(goal);
+        RescheduleIntention(goal);
     };
 
     auto stringGoalCallback = [this](const bdi_ros2::msg::GoalString::SharedPtr msg) -> void {
         std::cout << "Received a Goal message! Goal: " << msg->name << "value: " << msg->value << std::endl;
 
         GoalString *goal = new GoalString(msg->name, msg->value, msg->priority, msg->deadline);
-        ActivatePlan(goal);
+        RescheduleIntention(goal);
     };
 
     auto intGoalCallback = [this](const bdi_ros2::msg::GoalInt::SharedPtr msg) -> void {
         std::cout << "Received a Goal message! Goal: " << msg->name << "value: " << msg->value << std::endl;
 
         GoalInt *goal = new GoalInt(msg->name, msg->value, msg->priority, msg->deadline);
-        ActivatePlan(goal);
+        RescheduleIntention(goal);
     };
 
     auto floatGoalCallback = [this](const bdi_ros2::msg::GoalFloat::SharedPtr msg) -> void {
         std::cout << "Received a Goal message! Goal: " << msg->name << "value: " << msg->value << std::endl;
 
         GoalFloat *goal = new GoalFloat(msg->name, msg->value, msg->priority, msg->deadline);
-        ActivatePlan(goal);
+        RescheduleIntention(goal);
     };
 
     // create a subscriber for every type of Belief and Goal message
